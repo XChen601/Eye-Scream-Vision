@@ -9,6 +9,7 @@ const theme = createTheme({
             main: "#e9c46a",
         }
     },
+    
   });
 
 export default theme;

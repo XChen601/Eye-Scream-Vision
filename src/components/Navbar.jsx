@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const pages = ["Home", "Appointment", "Reviews", "About"]
+const pages = ["Home", "Services", "Contact", "About"]
 
 
 
@@ -54,7 +54,7 @@ function Navbar() {
                         {pages.map((page) => (
                         <MenuItem key={page} onClick={handleCloseNavMenu}>
                             <Typography textAlign="center">
-                                <Link to={`/${page}`}>
+                                <Link to={`/${page}`} style={{textDecoration: "none", color: "black"}}>
                                     {page}
                                 </Link>    
                             </Typography>
@@ -73,12 +73,15 @@ function Navbar() {
                 </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'flex-end' } }}>
                     {pages.map((page) => (
-                        <Button
-                        key={page}
-                        sx={{ my: 2, color: 'white', display: 'block', fontSize: 18, paddingRight: 3, paddingLeft: 3 }}
-                        >
-                        {page}
-                        </Button>
+                        
+                        <Link to={`/${page}`} style={{textDecoration: "none", color: "white"}} >
+                            <Button
+                            key={page}
+                            sx={{ my: 2, color: 'white', display: 'block', fontSize: 18, paddingRight: 3, paddingLeft: 3 }}
+                            >
+                                {page}
+                            </Button>
+                        </Link>  
                     ))}
                 </Box>
             </Toolbar>
