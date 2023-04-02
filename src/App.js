@@ -1,10 +1,13 @@
+import {ThemeProvider } from '@mui/material/styles';
 
+import Navbar from './components/Navbar';
+import theme from './components/theme';
 
 function App() {
   return (
-    <div>
-      test
-    </div>
+    <ThemeProvider theme={theme}>
+      <Navbar />
+    </ThemeProvider>
   );
 }
 
