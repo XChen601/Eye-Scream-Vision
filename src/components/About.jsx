@@ -3,7 +3,7 @@ import { Typography, Box, Divider } from "@mui/material";
 
 function About() {
     return (
-        <Box p={6} px="10%">
+        <Box p={6} px="8%">
             <Box>
                 <Typography variant="h4">Our Mission</Typography>
                 <Divider variant="middle" sx={{ bgcolor: "secondary.light" }}/>

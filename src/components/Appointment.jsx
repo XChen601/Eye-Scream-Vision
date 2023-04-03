@@ -12,7 +12,7 @@ function Appointment() {
                 
                 <Grid item xs={12} sm={12} md={8} pr={5}>
                     <Typography variant='h4'>Dr. Sarah Lee</Typography>
-                    <Typography variant='h6' color='secondary' pt={0}>O.D.</Typography>
+                    <Typography variant='h6' color='secondary' pt={0}>Optometrists</Typography>
                     <Typography>Dr. Sarah Lee received her Doctor of Optometry degree from the University of California, Berkeley School of Optometry.
                         She completed her clinical training at the Veterans Affairs Hospital in Fresno, where she gained experience in diagnosing and 
                         treating a wide range of eye conditions, including glaucoma, diabetic retinopathy, and age-related macular degeneration. She has 
@@ -28,7 +28,7 @@ function Appointment() {
                 
                 <Grid item xs={12} sm={12} md={8} pr={5}>
                     <Typography variant='h4'>Dr. James Smith</Typography>
-                    <Typography variant='h6' color='secondary' pt={0}>O.D.</Typography>
+                    <Typography variant='h6' color='secondary' pt={0}>Optometrists</Typography>
                     <Typography>Dr. James Smith earned his Doctor of Optometry degree from the Southern California College of Optometry. 
                         He completed his residency in ocular disease at the Veterans Affairs Hospital in Long Beach, where he gained extensive 
                         experience in the diagnosis and management of complex eye conditions. He is committed to providing exceptional care to 

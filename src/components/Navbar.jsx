@@ -1,5 +1,5 @@
 import { Toolbar, Typography, AppBar, Grid, IconButton, Menu, MenuItem, Box, Button  } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -7,8 +7,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 const pages = ["Home", "Appointment", "Reviews", "About"]
 
 
-
 function Navbar() {
+    const navigate = useNavigate();
+
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
@@ -52,11 +53,9 @@ function Navbar() {
                         }}
                     >
                         {pages.map((page) => (
-                        <MenuItem key={page} onClick={handleCloseNavMenu}>
+                        <MenuItem key={page} onClick={()=> {navigate(`/${page}`); handleCloseNavMenu();}}>
                             <Typography textAlign="center">
-                                <Link to={`/${page}`} style={{textDecoration: "none", color: "black"}}>
-                                    {page}
-                                </Link>    
+                                {page}
                             </Typography>
                         </MenuItem>
                         ))}
@@ -73,15 +72,12 @@ function Navbar() {
                 </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'flex-end' } }}>
                     {pages.map((page) => (
-                        
-                        <Link to={`/${page}`} style={{textDecoration: "none", color: "white"}} >
-                            <Button
-                            key={page}
-                            sx={{ my: 2, color: 'white', display: 'block', fontSize: 18, paddingRight: 3, paddingLeft: 3 }}
-                            >
-                                {page}
-                            </Button>
-                        </Link>  
+                        <Button onClick={() => navigate(`/${page}`)}
+                        key={page}
+                        sx={{ my: 2, color: 'white', display: 'block', fontSize: 18, paddingRight: 3, paddingLeft: 3 }}
+                        >
+                            {page}
+                        </Button>
                     ))}
                 </Box>
             </Toolbar>

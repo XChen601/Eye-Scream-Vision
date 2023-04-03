@@ -4,7 +4,7 @@ function Reviews() {
     return (
         <>
         <Typography variant='h5' textAlign='center' pt={6}>Read What Our Customers Say!</Typography>
-        <Grid container spacing={5} p={6}>
+        <Grid container spacing={5} p={6} px='10%'>
             <Grid item md={6}>
                 <Card sx={{padding: 3}}>
                     <CardContent>
