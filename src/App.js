@@ -6,6 +6,8 @@ import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
 import About from './components/About';
 import Appointment from './components/Appointment';
+import Reviews from './components/Reviews';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         <Route path="/Home" element={<Homepage />} />
         <Route path="/Appointment" element={<Appointment />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Reviews" element={<Reviews />} />
       </Routes>
+      <Footer />
     </ThemeProvider>
   );
 }

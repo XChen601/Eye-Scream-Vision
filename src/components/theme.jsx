@@ -18,6 +18,13 @@ const theme = createTheme({
             fontWeight: 600,
             color: "#2a9d8f",
         },
+        h5: {
+          color: "#e76f51"
+        },
+        h7: {
+          color: "#e76f51",
+          fontWeight: "bold",
+        }
         
     },
     
@@ -36,7 +43,6 @@ const theme = createTheme({
                 backgroundColor: '#2a9d8f',
                 color: 'white',
               },
-              marginTop: 15,
             },
           },
         },

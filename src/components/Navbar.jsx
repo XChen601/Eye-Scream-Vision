@@ -68,7 +68,7 @@ function Navbar() {
                         <VisibilityIcon sx={{fontSize: 30}}/>
                     </IconButton>
                 </Link>
-                <Typography variant="h5" sx={{ flexGrow: 1, display: { md: 'flex', justifyContent: 'flex-start' }, fontSize: 'max(24px, 2vw)', fontWeight: 600 }}>
+                <Typography variant="h4" color="white" sx={{ flexGrow: 1, display: { md: 'flex', justifyContent: 'flex-start' }, fontSize: 'max(24px, 2vw)', fontWeight: 600 }}>
                     Eye Scream Vision
                 </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'flex-end' } }}>
