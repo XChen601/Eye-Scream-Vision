@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const pages = ["Home", "Services", "Contact", "About"]
+const pages = ["Home", "Appointment", "Reviews", "About"]
 
 
 
@@ -68,7 +68,7 @@ function Navbar() {
                         <VisibilityIcon sx={{fontSize: 30}}/>
                     </IconButton>
                 </Link>
-                <Typography variant="h4" sx={{ flexGrow: 1, display: { md: 'flex', justifyContent: 'flex-start' }, fontSize: 'max(24px, 2vw)', fontWeight: 600 }}>
+                <Typography variant="h5" sx={{ flexGrow: 1, display: { md: 'flex', justifyContent: 'flex-start' }, fontSize: 'max(24px, 2vw)', fontWeight: 600 }}>
                     Eye Scream Vision
                 </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'flex-end' } }}>

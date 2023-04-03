@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import theme from './components/theme';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
+import About from './components/About';
+import Appointment from './components/Appointment';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/Home" element={<Homepage />} />
+        <Route path="/Appointment" element={<Appointment />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </ThemeProvider>
   );

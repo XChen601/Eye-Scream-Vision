@@ -10,13 +10,15 @@ const theme = createTheme({
         }
     },
     typography: {
-        fontSize: 16,
+        fontSize: 18,
         allVariants: {
             padding: '12px',
         },
         h4: {
             fontWeight: 600,
+            color: "#2a9d8f",
         },
+        
     },
     
     components: {

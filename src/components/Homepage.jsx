@@ -23,7 +23,6 @@ function Homepage() {
             alignItems="center" 
             flexWrap="wrap"
             useFlexGap
-            divider={<Divider orientation="vertical" flexItem />}
             sx={{textAlign: 'center', pt: 5}}>
             <Card sx={{padding: 3}}>
                 <CardContent>
@@ -50,6 +49,20 @@ function Homepage() {
             </Card>
         </Stack>
         <Stack>
+        <Box sx={{p:5}} >
+                <Typography variant='h4'>Who Are We?</Typography>
+                <Divider variant="middle" sx={{ bgcolor: "secondary.light" }}/>
+                <Typography>At our optometry clinic and ice cream shop, we are passionate about providing exceptional eye care and
+                     delicious treats to our valued customers. Our optometrist has years of experience and is dedicated to helping 
+                     you achieve optimal eye health and vision. In addition to our optometry services, we also offer a wide variety of locally-sourced,
+                      handmade ice cream flavors that are sure to satisfy your sweet tooth. We believe in supporting our community and using only 
+                      the highest quality ingredients in everything we offer. At our clinic and shop, you'll find a warm, welcoming environment 
+                      where you can relax, enjoy a scoop of ice cream, and receive the personalized attention you deserve. Come visit us and discover 
+                      why we are the premier destination for eye care and treats in the area.</Typography>
+                <Box display="flex" justifyContent="flex-end" mr={3}>
+                    <Button variant="contained">Learn More!</Button> 
+                </Box>
+            </Box>
             <Box sx={{p:5}} >
                 <Typography variant='h4'>Expert Eye Care Services</Typography>
                 <Divider variant="middle" sx={{ bgcolor: "secondary.light" }}/>
