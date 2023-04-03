@@ -3,10 +3,10 @@ import { createTheme, ThemeProvider, colors } from '@mui/material';
 const theme = createTheme({
     palette: {
         primary: {
-            main: "#2a9d8f",
+            main: "#7AA874",
         },
         secondary: {
-            main: "#e76f51",
+            main: "#EBB02D",
         }
     },
     typography: {
@@ -16,13 +16,13 @@ const theme = createTheme({
         },
         h4: {
             fontWeight: 600,
-            color: "#2a9d8f",
+            color: "#7AA874",
         },
         h5: {
-          color: "#e76f51"
+          color: "#EBB02D"
         },
         h7: {
-          color: "#e76f51",
+          color: "#EBB02D",
           fontWeight: "bold",
         }
         
@@ -37,10 +37,10 @@ const theme = createTheme({
               boxShadow: 'none',
             },
             outlined: {
-              borderColor: '#e76f51',
-              color: '#e76f51',
+              borderColor: '#EBB02D',
+              color: '#EBB02D',
               '&:hover': {
-                backgroundColor: '#2a9d8f',
+                backgroundColor: '#7AA874',
                 color: 'white',
               },
             },

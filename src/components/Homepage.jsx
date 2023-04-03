@@ -1,5 +1,5 @@
 import { Box, CardContent, Card, Typography, Stack, Button, Divider } from '@mui/material';
-import image from '../images/man_with_glasses.jpg'
+import banner from '../images/banner.webp'
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import PhoneIcon from '@mui/icons-material/Phone';
 import { useNavigate } from 'react-router-dom';
@@ -10,7 +10,7 @@ function Homepage() {
 
     return (
     <>
-        <Box sx={{backgroundImage: `url(${image})`,
+        <Box sx={{backgroundImage: `url(${banner})`,
             display: 'flex',
             backgroundSize: 'cover',
             backgroundPosition: 'center',

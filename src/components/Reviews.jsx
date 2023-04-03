@@ -60,9 +60,9 @@ function Reviews() {
             flexWrap="wrap"
             useFlexGap>
             <Button variant="contained">Read All Reviews</Button>
-            <Button variant="outlined" sx={{
+            <Button variant="outlined" color="secondary" sx={{
                 '&:hover': {
-                    backgroundColor: '#F44336',
+                    backgroundColor: '#EBB02D',
                   },
             }}>Leave A Review!</Button>
         </Stack>
