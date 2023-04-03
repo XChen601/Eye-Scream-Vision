@@ -1,4 +1,5 @@
 import {ThemeProvider } from '@mui/material/styles';
+import { Routes, Route } from "react-router-dom";
 
 import theme from './components/theme';
 import Navbar from './components/Navbar';
@@ -8,7 +9,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
-      <Homepage />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/Home" element={<Homepage />} />
+      </Routes>
     </ThemeProvider>
   );
 }

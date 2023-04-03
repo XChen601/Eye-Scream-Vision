@@ -11,7 +11,14 @@ const theme = createTheme({
     },
     typography: {
         fontSize: 16,
+        allVariants: {
+            padding: '12px',
+        },
+        h4: {
+            fontWeight: 600,
+        },
     },
+    
     components: {
         MuiButton: {
           styleOverrides: {
