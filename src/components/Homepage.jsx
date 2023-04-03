@@ -14,9 +14,20 @@ function Homepage() {
             justifyContent: 'center',
             alignItems: 'center'
         }}>
-            <Typography variant="h2" textAlign="center" color="white" sx={{
-            textShadow: '4px 4px 4px #000000'}}>
-            Welcome to Eye Scream Vision</Typography>
+            <Box
+                sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+              }}>
+               <Typography variant="h2" textAlign="center" color="white" sx={{
+                textShadow: '4px 4px 4px #000000', fontSize:'max(4vw, 45px)'}}>
+                Welcome to Eye Scream Vision</Typography> 
+                <Typography variant='h6' textAlign="center" color='secondary' fontWeight={600} sx={{
+                textShadow: '3px 3px 4px #000000'}}>
+                    See Better. Taste Better. All in One Place.</Typography>
+            </Box>
+            
         </Box>
         <Stack direction="row" spacing={5} 
             justifyContent="center"
