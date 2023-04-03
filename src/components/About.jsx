@@ -3,7 +3,7 @@ import { Typography, Box, Divider } from "@mui/material";
 
 function About() {
     return (
-        <Box p={6}>
+        <Box p={6} px="10%">
             <Box>
                 <Typography variant="h4">Our Mission</Typography>
                 <Divider variant="middle" sx={{ bgcolor: "secondary.light" }}/>
@@ -27,9 +27,9 @@ function About() {
                 <Typography variant="h4">Contact Us!</Typography>
                 <Divider variant="middle" sx={{ bgcolor: "secondary.light" }}/>
                 <Typography variant="h5" color='secondary'>Our Email:</Typography>
-                <Typography fontSize='max(1.5vw,20px)' pt={0}>eyescreamvision@realemail.com</Typography>
+                <Typography fontSize='max(1.3vw,20px)' pt={0}>eyescreamvision@realemail.com</Typography>
                 <Typography variant="h5" color='secondary'>Our Phone Number:</Typography>
-                <Typography fontSize='max(1.5vw,20px)' pt={0}>1-646-123-4567</Typography>
+                <Typography fontSize='max(1.3vw,20px)' pt={0}>1-646-123-4567</Typography>
             </Box>
         </Box>
     );
