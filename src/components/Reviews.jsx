@@ -62,7 +62,7 @@ function Reviews() {
             <Button variant="contained">Read All Reviews</Button>
             <Button variant="outlined" color="secondary" sx={{
                 '&:hover': {
-                    backgroundColor: '#EBB02D',
+                    backgroundColor: '#D864A9',
                   },
             }}>Leave A Review!</Button>
         </Stack>
