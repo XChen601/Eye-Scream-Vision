@@ -7,10 +7,13 @@ function Appointment() {
         <>
             <Grid container direction='row' justifyContent='center' p={8} spacing={4}>
                 <Grid item xs={12} sm={12} md={4}>
-                    <Box sx={{backgroundImage: `url(${doctor})`, width:'100%', height:'100%',  backgroundSize: 'cover', minHeight: '400px'}}></Box>
+                    <Box px="10%">
+                        <Box sx={{backgroundImage: `url(${doctor})`, width:'100%', height:'100%',  backgroundSize: 'cover', minHeight: '400px'}}></Box>
+                    </Box>
+                    
                 </Grid>
                 
-                <Grid item xs={12} sm={12} md={8} pr={5}>
+                <Grid item xs={12} sm={12} md={8} >
                     <Typography variant='h4'>Dr. Sarah Lee</Typography>
                     <Typography variant='h6' color='secondary' pt={0}>Optometrists</Typography>
                     <Typography>Dr. Sarah Lee received her Doctor of Optometry degree from the University of California, Berkeley School of Optometry.
@@ -21,9 +24,12 @@ function Appointment() {
                 </Grid>
             </Grid>
             <Divider variant="inset" sx={{ bgcolor: "secondary.light" }}/>
-            <Grid container direction='row' justifyContent='center' p={5} spacing={4}>
+            <Grid container direction='row' justifyContent='center' p={8} spacing={4}>
                 <Grid item xs={12} sm={12} md={4}>
-                    <Box sx={{backgroundImage: `url(${doctor2})`, width:'100%', height:'100%',  backgroundSize: 'cover', minHeight: '400px'}}></Box>
+                    <Box px="10%">
+                        <Box sx={{backgroundImage: `url(${doctor2})`, width:'100%', height:'100%',  backgroundSize: 'cover', minHeight: '400px'}}></Box>
+                    </Box>
+                    
                 </Grid>
                 
                 <Grid item xs={12} sm={12} md={8} pr={5}>
